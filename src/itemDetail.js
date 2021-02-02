@@ -9,10 +9,9 @@ function ItemDetail({match} ) {
     }, []);
 
     const [item, setItem] = useState({});
-
+    //this.setItem jastai
     const fetchItem = async () => {
-        const fetchItem = await fetch
-        (`https://jsonplaceholder.typicode.com/users/${match.params.id}`);
+        const fetchItem = await fetch(`https://jsonplaceholder.typicode.com/users/${match.params.id}`);
 
 
     const item = await fetchItem.json();
